@@ -72,3 +72,34 @@ vim.api.nvim_create_autocmd('BufWinEnter', {
     pattern = '*.*',
     command = 'silent! loadview'
 })
+
+-- Comment Line (NERDCommenter)
+vim.cmd[[filetype plugin on]]
+nnoremap("<C-_>", "<Plug>NERDCommenterToggle")
+vnoremap("<C-_>", "<Plug>NERDCommenterToggle")
+
+-- Emmet
+nnoremap("<C-Z>", "<nop>")
+vim.g.user_emmet_leader_key='<C-Z>'
+
+-- Force saving files that require root permission 
+vim.cmd[[cnoremap w!! w !sudo tee > /dev/null %]]
+
+
+-- Open Floaterm in current directory
+nmap('<A-Esc>', ':FloatermToggle<CR>')
+tnoremap('<esc><esc>', '<c-\\><c-n>')
+
+-- Harpoon
+nnoremap('<c-a>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>')
+nnoremap('<a-a>', ":lua require'harpoon.mark'.add_file()<CR>")
+nnoremap('<a-1>', ':lua require("harpoon.ui").nav_file(1)<CR>')
+nnoremap('<a-2>', ':lua require("harpoon.ui").nav_file(2)<CR>')
+nnoremap('<a-3>', ':lua require("harpoon.ui").nav_file(3)<CR>')
+nnoremap('<a-4>', ':lua require("harpoon.ui").nav_file(4)<CR>')
+nnoremap('<a-5>', ':lua require("harpoon.ui").nav_file(5)<CR>')
+nnoremap('<a-6>', ':lua require("harpoon.ui").nav_file(6)<CR>')
+nnoremap('<a-7>', ':lua require("harpoon.ui").nav_file(7)<CR>')
+nnoremap('<a-8>', ':lua require("harpoon.ui").nav_file(8)<CR>')
+nnoremap('<a-9>', ':lua require("harpoon.ui").nav_file(9)<CR>')
+nnoremap('<a-0>', ':lua require("harpoon.ui").nav_file(0)<CR>')
