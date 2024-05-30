@@ -30,4 +30,8 @@ return require('packer').startup(function(use)
     use 'github/copilot.vim'
     use 'ThePrimeagen/harpoon'
     use 'lewis6991/gitsigns.nvim'
+    use { 
+        'neoclide/coc.nvim', 
+        branch = 'release'
+    }
 end)
