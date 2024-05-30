@@ -34,4 +34,12 @@ return require('packer').startup(function(use)
         'neoclide/coc.nvim', 
         branch = 'release'
     }
+    use { -- Syntax highlighting
+        'nvim-treesitter/nvim-treesitter',
+        'nvim-treesitter/nvim-treesitter-context', -- Sticky header
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
 end)
