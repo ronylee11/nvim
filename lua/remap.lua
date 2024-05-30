@@ -35,6 +35,17 @@ xnoremap('<leader>S', 'S')
 nnoremap('<leader>x', 'x')
 xnoremap('<leader>x', 'x')
 
+--Leetcode.nvim keybinds
+nnoremap('<leader>lc', ':Leet console<CR>')
+nnoremap('<leader>lh', ':Leet info<CR>')
+nnoremap('<leader>l<tab>', ':Leet tabs<CR>')
+nnoremap('<leader>li', ':Leet lang<CR>')
+nnoremap('<leader>lr', ':Leet run<CR>')
+nnoremap('<leader>ls', ':Leet submit<CR>')
+nnoremap('<leader>ll', ':Leet list<CR>')
+nnoremap('<leader>ld', ':Leet desc<CR>')
+nnoremap('<leader>lm', ':Leet menu<CR>')
+
 --Tabs
 --New Tab
 nmap('<c-w>t', ':tabnew<cr>')
