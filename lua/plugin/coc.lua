@@ -155,17 +155,17 @@ keyset("x", "ac", "<Plug>(coc-classobj-a)", opts)
 keyset("o", "ac", "<Plug>(coc-classobj-a)", opts)
 
 
--- Remap <C-f> and <C-b> to scroll float windows/popups
+-- Remap <C-p> and <C-n> to scroll float windows/popups
 ---@diagnostic disable-next-line: redefined-local
 local opts = {silent = true, nowait = true, expr = true}
-keyset("n", "<C-f>", 'coc#float#has_scroll() ? coc#float#scroll(1) : "<C-f>"', opts)
-keyset("n", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', opts)
-keyset("i", "<C-f>",
+keyset("n", "<C-p>", 'coc#float#has_scroll() ? coc#float#scroll(1) : "<C-p>"', opts)
+keyset("n", "<C-n>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-n>"', opts)
+keyset("i", "<C-p>",
        'coc#float#has_scroll() ? "<c-r>=coc#float#scroll(1)<cr>" : "<Right>"', opts)
-keyset("i", "<C-b>",
+keyset("i", "<C-n>",
        'coc#float#has_scroll() ? "<c-r>=coc#float#scroll(0)<cr>" : "<Left>"', opts)
-keyset("v", "<C-f>", 'coc#float#has_scroll() ? coc#float#scroll(1) : "<C-f>"', opts)
-keyset("v", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', opts)
+keyset("v", "<C-p>", 'coc#float#has_scroll() ? coc#float#scroll(1) : "<C-p>"', opts)
+keyset("v", "<C-n>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-n>"', opts)
 
 
 -- Use CTRL-S for selections ranges
@@ -192,7 +192,7 @@ vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}"
 -- code actions and coc stuff
 ---@diagnostic disable-next-line: redefined-local
 local opts = {silent = true, nowait = true}
--- Show all diagnostics
+-- Show all diagnostics -- <space>a also binds to <space>p
 keyset("n", "<space>a", ":<C-u>CocList diagnostics<cr>", opts)
 -- Manage extensions
 keyset("n", "<space>e", ":<C-u>CocList extensions<cr>", opts)

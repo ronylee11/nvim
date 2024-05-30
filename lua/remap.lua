@@ -5,7 +5,6 @@ local xnoremap = require("keymap").xnoremap
 local inoremap = require("keymap").inoremap
 local tnoremap = require("keymap").tnoremap
 
-nnoremap("<leader>pv", "<cmd>:wincmd v<bar> :Ex <bar> :vertical resize 30<CR>")
 nnoremap("<C-B>", "<cmd>:wincmd v<bar> :Ex <bar> :vertical resize 30<CR>")
 nnoremap("<leader>=", "<cmd>:vertical resize +5<CR>")
 nnoremap("<leader>-", "<cmd>:vertical resize -5<CR>")
