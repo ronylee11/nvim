@@ -14,10 +14,6 @@ vim.opt.expandtab = true
 -- Enable to switch buffer without saving
 vim.opt.hidden = true 
 
--- Theme
-vim.cmd[[set background=dark]]
-vim.cmd[[colorscheme iceberg]]
-vim.g.airline_theme="iceberg"
 -- Clipboard
 vim.opt.clipboard="unnamed,unnamedplus"
 --Netrw config 
