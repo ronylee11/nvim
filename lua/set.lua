@@ -27,7 +27,6 @@ vim.g.netrw_hide = 1
 -- Treesitter Folding
 --vim.opt.foldmethod     = 'expr'
 --vim.opt.foldexpr       = 'nvim_treesitter#foldexpr()'
-vim.opt.foldenable = false
 ---WORKAROUND
 vim.api.nvim_create_autocmd({'BufEnter','BufAdd','BufNew','BufNewFile','BufWinEnter'}, {
   group = vim.api.nvim_create_augroup('TS_FOLD_WORKAROUND', {}),
@@ -37,3 +36,4 @@ vim.api.nvim_create_autocmd({'BufEnter','BufAdd','BufNew','BufNewFile','BufWinEn
   end
 })
 ---ENDWORKAROUND
+vim.opt.foldenable     = false
