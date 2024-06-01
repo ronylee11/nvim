@@ -69,6 +69,7 @@ return require('packer').startup(function(use)
             "nvim-tree/nvim-web-devicons",
         },
     }
+    use 'jwalton512/vim-blade' -- Laravel Blade Syntax
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
