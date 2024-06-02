@@ -27,6 +27,10 @@ return require('packer').startup(function(use)
     use 'christoomey/vim-tmux-navigator' -- Navigate between tree and file
     use 'preservim/nerdcommenter' -- Comment Line
     use {
+        'nvim-lua/plenary.nvim',
+        tag = 'v0.1.4',
+    }
+    use {
         'nvim-telescope/telescope.nvim', tag = '0.1.6', -- Telescope, :Files but with syntax highlighting
         "nvim-telescope/telescope-file-browser.nvim",
         { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
@@ -44,7 +48,7 @@ return require('packer').startup(function(use)
     use 'ThePrimeagen/harpoon'
     use 'lewis6991/gitsigns.nvim'
     use { -- Autocompletion and definition preview
-        'neoclide/coc.nvim', 
+        'neoclide/coc.nvim',
         branch = 'release'
     }
     use { -- Syntax highlighting
