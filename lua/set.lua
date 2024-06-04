@@ -5,14 +5,14 @@ vim.opt.relativenumber = true
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.smartindent = true
-vim.opt.wrap = false
+vim.opt.wrap = true
 -- Set <tab> space wide
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 -- Enable to switch buffer without saving
-vim.opt.hidden = true 
+vim.opt.hidden = true
 
 -- Clipboard
 vim.opt.clipboard="unnamed,unnamedplus"
