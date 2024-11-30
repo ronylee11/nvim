@@ -44,50 +44,8 @@ return require('packer').startup(function(use)
     }
     use 'mattn/emmet-vim'
     use 'voldikss/vim-floaterm'
-    use 'github/copilot.vim'
     use 'ThePrimeagen/harpoon'
     use 'lewis6991/gitsigns.nvim'
-    use { -- Autocompletion and definition preview
-        'neoclide/coc.nvim',
-        branch = 'release'
-    }
-    use {                                          -- Syntax highlighting
-        'nvim-treesitter/nvim-treesitter',
-        'nvim-treesitter/nvim-treesitter-context', -- Sticky header
-        run = function()
-            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-            ts_update()
-        end,
-    }
-    use {
-        'kawre/leetcode.nvim',
-        run = ':TSUpdate html',
-        requires = {
-            "nvim-telescope/telescope.nvim",
-            "nvim-lua/plenary.nvim", -- required by telescope
-            "MunifTanjim/nui.nvim",
-
-            -- optional
-            "nvim-treesitter/nvim-treesitter",
-            "rcarriga/nvim-notify",
-            "nvim-tree/nvim-web-devicons",
-        },
-    }
-    use 'jwalton512/vim-blade' -- Laravel Blade Syntax
-    -- install without yarn or npm
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    })
-    use({
-        'neovim/nvim-lspconfig',
-        'jose-elias-alvarez/null-ls.nvim',
-        'MunifTanjim/eslint.nvim'
-    })
-    use({
-        'lervag/vimtex',
-        run = function() vim.g.vimtex_view_method = 'zathura' end
-    })
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

@@ -1,2 +1,0 @@
-how to temporarily disable copilot
-:let b:copilot_enabled = 0
