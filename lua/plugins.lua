@@ -74,6 +74,10 @@ return require('packer').startup(function(use)
         },
     }
     use 'jwalton512/vim-blade' -- Laravel Blade Syntax
+    use({
+        'lervag/vimtex',
+        run = function() vim.g.vimtex_view_method = 'zathura' end
+    })
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

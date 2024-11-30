@@ -20,6 +20,8 @@ vim.g.coc_global_extensions = {
     'coc-lua',
     '@yaegassy/coc-laravel',
     'coc-clangd',
+    'coc-rust-analyzer',
+    'coc-perl'
 }
 
 -- https://raw.githubusercontent.com/neoclide/coc.nvim/master/doc/coc-example-config.lua

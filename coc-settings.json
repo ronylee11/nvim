@@ -75,7 +75,16 @@
   "rainbow-fart.disable-voice-packages": [],
   "rainbow-fart.enabled": false,
   "snippets.ultisnips.pythonPrompt": false,
-  "coc.preferences.extensionUpdateCheck": "daily"
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "workspace.ignoredFolders": [
+      "$HOME",
+      "$HOME/.cargo/**",
+      "$HOME/.rustup/**"
+  ],
+  "coc.source.vimtex.filetypes": [
+    "tex",
+    "plaintex"
+  ],
   // TODO language servers
   // TODO g:coc_global_extensions
   // TODO b:coc_suggest_disable=1 GOYO
