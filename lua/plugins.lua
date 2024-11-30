@@ -74,6 +74,16 @@ return require('packer').startup(function(use)
         },
     }
     use 'jwalton512/vim-blade' -- Laravel Blade Syntax
+    -- install without yarn or npm
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+    use({
+        'neovim/nvim-lspconfig',
+        'jose-elias-alvarez/null-ls.nvim',
+        'MunifTanjim/eslint.nvim'
+    })
     use({
         'lervag/vimtex',
         run = function() vim.g.vimtex_view_method = 'zathura' end
