@@ -37,3 +37,6 @@ vim.api.nvim_create_autocmd({'BufEnter','BufAdd','BufNew','BufNewFile','BufWinEn
 })
 ---ENDWORKAROUND
 vim.opt.foldenable     = false
+
+-- 24-bit RGB color in terminal
+vim.opt.termguicolors = true
