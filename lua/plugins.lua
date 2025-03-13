@@ -20,8 +20,8 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
     -- Theme
-    --use 'cocopon/iceberg.vim'
-    use 'nordtheme/vim'
+    use 'cocopon/iceberg.vim'
+    --use 'nordtheme/vim'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
     -- Utilities
