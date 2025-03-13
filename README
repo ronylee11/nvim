@@ -1,2 +1,9 @@
 how to temporarily disable copilot
 :let b:copilot_enabled = 0
+
+note: if your setup looks different than the picture, might be
+- you are using a 24-bit color terminal (default Terminal.app in macOS)
+- you have misconfigured xterm-256color (google it)
+- your terminal emulator color settings are different
+
+solution: use alacritty setup in this repo, its called ANT, not NT
