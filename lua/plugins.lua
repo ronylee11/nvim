@@ -89,6 +89,8 @@ return require('packer').startup(function(use)
         'lervag/vimtex',
         run = function() vim.g.vimtex_view_method = 'zathura' end
     })
+    use 'folke/zen-mode.nvim'
+    use 'nvimtools/hydra.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
