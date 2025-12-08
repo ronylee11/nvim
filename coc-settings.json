@@ -75,7 +75,7 @@
   "rainbow-fart.disable-voice-packages": [],
   "rainbow-fart.enabled": false,
   "snippets.ultisnips.pythonPrompt": false,
-  "coc.preferences.extensionUpdateCheck": "daily",
+  "extensions.updateCheck": "daily",
   "workspace.ignoredFolders": [
       "$HOME",
       "$HOME/.cargo/**",
